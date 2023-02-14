@@ -1,0 +1,126 @@
+<!DOCTYPE >
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Manipulating the DOM</title>
+  <!-- Load Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Fira+Sans:900|Merriweather&display=swap" rel="stylesheet">  <!-- Load Styles -->
+  <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+  <!-- HTML Follows BEM naming conventions 
+  IDs are only used for sections to connect menu achors to sections -->
+  <header class="page__header">
+    <nav class="navbar__menu">
+      <!-- Navigation starts as empty UL that will be populated with JS -->
+      <ul id="navbar__list"></ul>
+    </nav>
+  </header>
+  <main>
+    <header class="main__hero">
+      <h1>Product Management </h1>
+    </header>
+    <!-- Each Section has an ID (used for the anchor) and 
+    a data attribute that will populate the li node.
+    Adding more sections will automatically populate nav.
+    The first section is set to active class by default -->
+    <section id="section1" data-nav="Product Strategy" class="your-active-class">
+      <div class="landing__container">
+        <h2>Product Strategy</h2>
+        <p>The most effective products start with a comprehensive market-based, insight-driven strategy. Understand
+          the role that product managers play during product development, with a focus on activities that happen
+          early in the product development cycle. Learn how to identify the right problems to solve through market
+          research, target user definition, and market sizing. Create a compelling vision and strategy that will set up
+          the team to solve those problems. Understand how to communicate effectively to get people excited and
+          bought into your ideas.</P>
+
+        <p>The inception of any product that gets built starts with a vision and a
+          product manager that rallies stakeholders behind that vision. In this
+          project, you will choose to act as a product manager for one of four
+          top technology companies and develop a compelling pitch for the
+          development of a new product. You’ll be provided a business scenario
+          relevant to each of the four companies and based on the provided
+          business scenario of the company you choose, you will perform
+          primary and secondary market research to identify target users and
+          size the market opportunity for a new product. Then, you will compile
+          your analysis into a pitch deck and present the vision of your product
+          to business stakeholders.</p>
+      </div>
+    </section>
+    <section id="section2" data-nav="Product Design">
+      <div class="landing__container">
+        <h2>Product Design</h2>
+        <p>
+          Once the problem has been defined and a market opportunity has been identified, it is important to create
+          a solution that is desirable by its users. Bring an idea through concept, design, and user validation, as
+          well as creating a spec to handoff to engineering for development. Use design thinking methodologies to
+          diverge in order to explore ideas, and then ultimately focus in and converge on a single idea. Map out the
+          full concept through creation of a prototype that can be used to validate that you’re solving a problem for
+          real users.</P>
+        <p>The most desirable products have been built iteratively with the user
+          in mind. In this project, you will take a problem/opportunity (using
+          work from the previous course) through a Design Sprint. During the
+          Design Sprint, you will explore multiple ideas, narrow down ideas
+          to the most compelling one, create a storyboard and prototype,
+          conduct user research, refine their ideas, and incorporate findings
+          into a final product spec.</p>
+      </div>
+    </section>
+    <section id="section3" data-nav="Product Development">
+      <div class="landing__container">
+        <h2>Product Development</h2>
+        <p>A product is only successful if it can be feasibility built according to a dedicated timeline. Learn the critical
+          soft skills needed to manage the development and execution phase of the product. Collaborate with
+          cross-functional teams and business stakeholders to guide the product development team through
+          planning and execution. Manage stakeholder expectations and handle risks that arise, reprioritizing
+          feature and sprint priorities to tackle competing requests.</p>
+
+        <p>Leading the development of a product so it can get shipped within
+          a given timeline requires an adeptness at managing priorities,
+          relationships and expectations. In this project, you will take the
+          work completed in the previous course through the execution and
+          development phase. First, you will compile a sprint backlog with
+          a clearly defined sprint goal that reflects the prioritized user stories
+          and detailed acceptance criteria. Then, you will refine the solution by
+          leveraging API documentation. Then, you will create a coordination
+          activities map and handle competing priorities ranging from
+          production issues reported and resource constraints to stakeholder
+          feedback and requests that come up during product development.</p>
+      </div>
+    </section>
+    <section id="section4" data-nav="Product Launch">
+      <div class="landing__container">
+        <h2>Product Launch</h2>
+        <p>Once a need has been defined and a product has been designed and developed, it is time to bring that
+          product to the market. Learn all about the launch process and the important partners a Product Manager
+          will need to work with during this phase. Create a plan, identify the launch risks and figure out how to
+          minimize their impact on your launch. Collaborate with Marketing stakeholders to determine how to
+          target your customers and develop a compelling message to increase engagement in your product. Work
+          with Sales, Customer Support and the other teams to prepare them to interface with your customers as
+          the product is launched. Execute the launch and use feedback from your customers to determine the next
+          steps for your product.</p>
+
+        <p>A product finally realizes its impact once it is delivered to customers.
+          In this project, you will take the product you have developed in the
+          earlier courses and bring it to market. First, you will create a
+          pre-launch process, including identification of launch risks and
+          mitigations, to enable launch. Then, you will develop a marketing
+          and pricing strategy to communicate the value proposition of your
+          product to customers. Then, you will write a user guide and other
+          create other communications collateral to prepare the Sales and
+          Customer Support teams to evangelize the product. Finally, you
+          will use customer feedback to design an A/B test for a new product
+          feature.</p>
+      </div>
+    </section>
+  </main>
+  <footer class="page__footer">
+    <p>&copy Udacity</p>
+  </footer>
+  
+<script src="js/app.js"></script>
+
+</body>
+</html>
